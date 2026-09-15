@@ -27,7 +27,20 @@ class Student:
         self.scores = np.array(valid_scores)
 
         def lock_score(self, default_sc):
-            
+            self.default_sc = default_sc
+
+        class InvalidScoreError(Exception):
+            def __init__(self, Not_score)
+                message = f"{score} score does not follow the inclusive number"
+                super().__init__(message)
+                self.Not_score = Not score
+
+        class StudentRecordLockedError(Exception)
+                    def __init__(self, Valid_score)
+                        message = f"{Valod_score} scores is locked nd cannot be accessed"
+                        super().__init__(message)
+                        self.Valid_score = Valid_score
+
 
 
 
