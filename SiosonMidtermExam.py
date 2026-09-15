@@ -26,6 +26,10 @@ class Student:
             
         self.scores = np.array(valid_scores)
 
+        def lock_score(self, default_sc):
+            
+
+
 
 
 
